@@ -1,0 +1,140 @@
+# Política de Privacidade do Flashcard
+
+**Última atualização: 19 de outubro de 2026.**
+
+Esta Política de Privacidade explica quais dados são tratados pelo aplicativo
+Flashcard, para quais finalidades são utilizados, onde ficam armazenados e como
+você pode solicitar sua exclusão.
+
+**Responsável pelo aplicativo e pelo tratamento dos dados:** Vítor.  
+**Contato sobre privacidade:** [vitorbanuhart@gmail.com](mailto:vitorbanuhart@gmail.com).
+
+## 1. Dados tratados e suas finalidades
+
+| Categoria | Dados tratados | Finalidade |
+| --- | --- | --- |
+| Conta e perfil | Nome, endereço de e-mail, identificador da conta (UID), confirmação do e-mail e provedor de login utilizado. | Criar e identificar sua conta, permitir acesso, apresentar e atualizar seu perfil e manter seus dados separados dos de outros usuários. |
+| Autenticação | Senha informada no cadastro, login ou confirmação de identidade com e-mail; credenciais e tokens de sessão administrados pelos serviços de autenticação. | Autenticar o usuário, manter a sessão, recuperar o acesso e confirmar a identidade antes de excluir a conta. |
+| Login com Google | Identificadores e informações de perfil disponibilizados pelo Google, como nome, e-mail e, quando fornecida ao serviço de autenticação, imagem de perfil. | Permitir entrar e confirmar a identidade usando a conta Google. O aplicativo não oferece envio ou edição de fotos. |
+| Conteúdo de estudo | Nomes dos decks, textos da frente e do verso dos cartões, identificadores e versões desses registros. | Organizar sua biblioteca particular, permitir criar, editar e excluir conteúdos e sincronizar alterações entre o dispositivo e a nuvem. |
+| Revisões e progresso | Avaliações de acerto ou erro, datas de revisão, próximo agendamento, parâmetros do algoritmo de repetição espaçada e totais diários de respostas e acertos. | Programar revisões, calcular erros, progresso, estatísticas e sequência de dias de estudo. Os dias de estudo são calculados em UTC. |
+| Sincronização | Cópias locais da biblioteca e do histórico, alterações pendentes, identificadores de operações, estados de envio e recibos de operações concluídas. | Permitir o uso dos dados disponíveis sem conexão, retomar envios e evitar duplicação ou perda de alterações. |
+| Preferências do dispositivo | Tema, formato de exibição dos decks e opção de sincronização automática. | Aplicar suas escolhas de aparência e funcionamento. Essas preferências ficam no dispositivo e podem ser usadas por diferentes contas nesse aparelho. |
+| Exclusão da conta | Identificador da conta, data de início da exclusão e sinalizadores de recuperação. | Executar e retomar a limpeza e impedir que uma fila antiga envie novamente dados de uma conta excluída. |
+| Dados técnicos de autenticação | Endereço IP e informações do cliente de acesso, como o identificador de software enviado nas requisições (user agent), tratados pelo Firebase Authentication. | Prestar o serviço de autenticação, proteger o acesso e prevenir abuso, conforme a [documentação de privacidade do Firebase](https://firebase.google.com/support/privacy). |
+| Solicitações de contato | E-mail, identificação e conteúdo que você enviar voluntariamente ao contato de privacidade. | Responder a dúvidas e solicitações relativas aos seus dados e verificar a identidade quando necessário. Não envie senhas ou tokens por e-mail. |
+
+A senha de acesso por e-mail é encaminhada ao Firebase Authentication. O
+Flashcard não a grava nos bancos locais da biblioteca, de preferências ou de
+sincronização. Ao entrar com Google, o aplicativo usa as credenciais do provedor;
+você não informa sua senha Google ao formulário de cadastro do Flashcard.
+
+Os textos que você inserir em decks e cartões podem conter informações pessoais.
+Insira apenas informações necessárias ao seu estudo e que você tenha autorização
+para utilizar.
+
+## 2. Armazenamento e sincronização
+
+As alterações de decks, cartões, respostas, exclusões da biblioteca e nome do
+perfil são gravadas primeiro no dispositivo. No modo automático, o envio ocorre
+em segundo plano enquanto o aplicativo está ativo. No modo manual, as alterações
+aguardam uma ação explícita de sincronização. Desativar o automático não cancela
+uma requisição que já tenha sido enviada.
+
+Dados de conta são tratados pelo Firebase Authentication. A biblioteca, os
+agendamentos, os totais diários e os recibos de sincronização são armazenados no
+Cloud Firestore quando enviados. O dispositivo também mantém dados de sessão
+administrados pelos SDKs, cópias locais e a fila de alterações, separados por
+conta. As preferências de aparência e sincronização ficam em armazenamento local
+separado e não são enviadas pela fila da biblioteca.
+
+Desligar a sincronização automática não desativa a comunicação necessária ao
+login, à recuperação de acesso, à exclusão da conta ou às leituras remotas que
+você solicitar. Não há garantia de envio com o aplicativo encerrado.
+
+## 3. Prestadores de serviço e compartilhamento
+
+Utilizamos Google/Firebase para autenticação e armazenamento em nuvem. Esses
+serviços recebem os dados necessários às funções descritas nesta política.
+Quando você escolhe o login Google, o Google também participa da autenticação
+como provedor da sua conta.
+
+O Flashcard não disponibiliza sua biblioteca e seu histórico para outros
+usuários. O aplicativo não utiliza esses dados para venda de informações,
+publicidade direcionada ou treinamento de modelos de inteligência artificial.
+A versão atual não integra Google Analytics nem Firebase Crashlytics.
+
+Informações poderão ser fornecidas quando houver obrigação legal ou determinação
+de autoridade competente, dentro dos limites aplicáveis.
+
+Consulte também a [Política de Privacidade do Google](https://policies.google.com/privacy)
+e as [informações sobre privacidade e segurança do Firebase](https://firebase.google.com/support/privacy).
+
+## 4. Local de processamento e segurança
+
+Os serviços Google/Firebase podem processar dados fora do Brasil. O Firebase
+Authentication opera em centros de dados nos Estados Unidos; o local de
+armazenamento do Cloud Firestore depende da configuração do serviço. Consulte
+as [informações de localização do Firebase](https://firebase.google.com/support/privacy#data_storage_and_processing_locations).
+
+As comunicações com o Firebase utilizam conexões criptografadas. O aplicativo
+utiliza autenticação, verificações de propriedade e regras de acesso para
+restringir o acesso aos dados da conta. O armazenamento local fica na área
+privada do aplicativo, sujeito às proteções do sistema operacional e do seu
+dispositivo. Não há garantia absoluta de segurança; proteja também o acesso ao
+aparelho e às suas credenciais.
+
+## 5. Retenção e exclusão
+
+Os dados de conta, biblioteca e estudo são mantidos para oferecer o serviço
+enquanto a conta existir, até que você exclua os registros correspondentes ou
+solicite a exclusão da conta. Excluir um cartão ou um deck não apaga o histórico
+diário de respostas já registrado. Recibos de sincronização são mantidos até a
+exclusão da conta para impedir a repetição de operações.
+
+Para excluir sua conta no aplicativo, acesse **Configurações → Excluir minha
+conta**, confirme a ação e autentique-se novamente. O processo remove decks,
+cartões, histórico, recibos e os dados locais da conta no aparelho que realiza a
+exclusão; a conta no Firebase Authentication é removida por último. É necessário
+manter o aplicativo aberto e conectado até a conclusão. Se houver falha ou
+interrupção, reabra o aplicativo e retome a exclusão indicada na tela.
+
+**Após a exclusão, permanece um registro técnico mínimo, sem prazo automático de
+expiração, contendo o identificador da conta e a data de início da exclusão.**
+Esse registro não contém nome, e-mail, textos de cartões ou histórico de estudo.
+Sua finalidade exclusiva no aplicativo é bloquear reenvios e restaurações
+indevidas por dispositivos ou filas antigos. O identificador continua sendo um
+dado associado à antiga conta; esse registro não é apresentado como anônimo.
+
+As preferências do aparelho e os dados de outras contas são preservados. Outros
+dispositivos removem as cópias locais dessa conta quando se reconectam e detectam
+a exclusão. Sair da conta não apaga automaticamente suas cópias locais.
+Desinstalar ou limpar os dados do aplicativo pode remover dados locais e
+alterações ainda não enviadas, mas não substitui a exclusão da conta na nuvem.
+Excluir a conta do Flashcard não exclui sua conta Google.
+
+Registros de segurança e cópias residuais dos prestadores podem ter prazos
+próprios de remoção. Para o Firebase Authentication, a documentação informa que
+os dados de autenticação são removidos dos sistemas ativos e de backup em até
+180 dias após a solicitação de exclusão do usuário ao serviço. Consulte os
+[prazos divulgados pelo Firebase](https://firebase.google.com/support/privacy).
+
+## 6. Seus direitos e solicitações fora do aplicativo
+
+Você pode consultar e corrigir o nome do perfil e seus conteúdos pelas funções
+do aplicativo. Também pode solicitar informações sobre o tratamento, acesso,
+correção ou exclusão de dados e exercer outros direitos previstos na legislação
+aplicável pelo e-mail [vitorbanuhart@gmail.com](mailto:vitorbanuhart@gmail.com).
+
+Para solicitar a exclusão sem acessar o aplicativo, envie uma mensagem com o
+assunto **“Exclusão de conta — Flashcard”**, informando o e-mail associado à conta.
+Poderá ser necessária confirmação de identidade para evitar exclusões indevidas.
+Não envie sua senha. A solicitação abrange os dados e as ressalvas de retenção
+descritos na seção anterior.
+
+## 7. Alterações desta política
+
+Esta política poderá ser atualizada para refletir mudanças no aplicativo e no
+tratamento de dados. A data da versão vigente é informada no início do documento.
+Para dúvidas sobre esta política, entre em contato com Vítor pelo e-mail
+[vitorbanuhart@gmail.com](mailto:vitorbanuhart@gmail.com).
